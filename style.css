@@ -10,29 +10,31 @@ body {
 
 /*/////////////////nav////////////////////////*/
 
-.rectangle5 {position: absolute;
-width: 1200px;
-height: 8px;
-
-background: #4A3174;
+.rectangle5 {
+    position: absolute;
+    width: 1200px;
+    height: 8px;
+    background: #4A3174;
 }
-nav{
+
+nav {
     height: 179px;
+
 }
 
-
-nav ul{
+nav ul {
     list-style-type: none;
 }
 
-nav li{
+nav li {
     float: left;
     width: 10%;
     text-align: center;
     padding: 26px;
     margin-left: 70px;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     font-size: 20px;
     line-height: 23px;
@@ -40,7 +42,7 @@ nav a{
     color: #4A3174;
 }
 
-button{
+button {
     position: absolute;
     left: 1100px;
     top: 15px;
@@ -52,25 +54,68 @@ button{
     height: 40px;
     font-size: 15px;
     font-weight: bold;
-
 }
-label{
+
+label {
     position: absolute;
     left: 900px;
     top: 26px;
     color: #9d9d9d;
     font-weight: bold;
 }
+
 /*/////////////////////////////////header//////////////////*/
 
-img{
+header {
+    height: 500px;
+}
+
+img {
     margin-left: 113px;
 }
-h1{
+
+header h1 {
     color: #4A3174;
     font-family: roboto condensed, sans serif;
     font-weight: 700;
     line-height: 75px;
-    
+    font-size: 64px;
+    position: absolute;
+    left: 300px;
+    top: 175px;
+}
 
+header p {
+    position: absolute;
+    left: 300px;
+    top: 250px;
+    font-size: 16px;
+    color: #7a7a7a;
+}
+
+.recherche {
+    padding: 15px;
+    position: absolute;
+    left: 800px;
+    top: 200px;
+    color: #9d9d9d;
+    font-size: 17px;
+    font-family: roboto condensed, sans serif;
+    background: #ffffff;
+    border-radius: 3px;
+    height: 40px;
+    width: 441px;
+    border: none;
+}
+
+.GO {
+    position: absolute;
+    top: 200px;
+    left: 1160px;
+    width: 80px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-family: roboto condensed;
+    font-size: 17px;
+    font-weight: 700;
 }
