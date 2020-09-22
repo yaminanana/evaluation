@@ -11,13 +11,14 @@ body {
 /*/////////////////nav////////////////////////*/
 
 .rectangle5 {
-    position: absolute;
-    width: 1200px;
+    position: relative;
+    width: 1500px;
     height: 8px;
     background: #4A3174;
 }
 
 nav {
+   
     height: 179px;
 }
 
@@ -27,13 +28,15 @@ nav ul {
 
 nav li {
     float: left;
-    width: 10%;
+    
     text-align: center;
     padding: 26px;
     margin-left: 70px;
 }
 
 nav a {
+    position: relative;
+    left: 130px;
     text-decoration: none;
     font-size: 20px;
     line-height: 23px;
@@ -42,8 +45,8 @@ nav a {
 }
 
 button {
-    position: absolute;
-    left: 1100px;
+    position: relative;
+    left: 340px;
     top: 15px;
     color: #fafafa;
     background-color: #4A3174;
@@ -56,9 +59,9 @@ button {
 }
 
 label {
-    position: absolute;
-    left: 900px;
-    top: 26px;
+    position: relative;
+    left: 270px;
+    top: 20px;
     color: #9d9d9d;
     font-weight: bold;
 }
@@ -69,7 +72,7 @@ header {
     height: 300px;
 }
 
-header img {}
+
 
 .titre1 {
     color: #4A3174;
@@ -83,8 +86,8 @@ header img {}
 }
 
 .logo {
-    position: absolute;
-    left: 100px;
+    position: relative;
+    right: 1250px;
     top: 175px;
     box-shadow: none;
     background-color: #fafafa;
@@ -128,61 +131,115 @@ header p {
 /*//////////////////////////////////section//////////////////////////////*/
 
 .titre2 {
-    position: absolute;
-    left: 130px;
-    top: 350px;
-    height: 500px;
+    position: relative;
+    left: 250px;
+    bottom: 150px;
+    height: 50px;
+    width: 900px;
     font-family: roboto condensed, sans serif;
     font-weight: 700;
     font-size: 34px;
     color: #4A3174;
+    
+  
 }
 
 section {
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-left: 100px;
 }
 
-section img {
+.proposition {
     box-shadow: 0px 4px 20px;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 20px;
+    margin-left: 100px;
+    height: 430px;
+    width: 300px;
+    position: relative;
+    right: 200px;
 }
 
-section h4 {
-    box-shadow: 0px 4px 20px;
-    background-color: #ffffff;
-    padding: 10px;
+ span {
+    color: #7a7a7a;
+    font-size: 16px;
+    
+    
 }
+
+h4 {
+    color: #222222;
+    font-size: 19px;
+    
+   
+}
+
+
 
 /*/////////////////article/////////////////*/
 
 article {
-    height: 1400px;
+    height: 1200px;
     display: flex;
     flex-wrap: wrap;
 }
 
+article > h1 {
+    font-family: roboto condensed;
+    font-size: 34px;
+    color: #4A3174;
+}
+
+h1 > span {
+    font-size: 34px;
+    color: gold;
+}
+
 .book {
+   display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     box-shadow: 0px 4px 20px;
     background-color: #ffffff;
-    vertical-align: text-top;
-    width: 80%;
+    width: 90%;
     height: 150px;
-    margin: auto;
+    margin: 15px auto 15px auto;
+}
+
+.book p {
+    padding: 15px;
+    margin: 0px;
+    font-size: 14px;
+    text-align: left;
+    width: 700px;
+    position: relative;
+    top: 30px;
+    right: 200px;
+    
 }
 
 .book:hover {
     box-shadow: 5px 6px 30px;
+    color: #9e9e9e;
+}
+.flotte{
+   padding-left: 10px;
 }
 
-.flotte {
-    /*vertical-align: top;*/
+.book > h4 {
+    padding-left: 10px;
+    position: relative;
+    left: 60px;
 }
+
+
+
+
+
+
 
 /*//////////////////footer///////////*/
 
@@ -193,7 +250,42 @@ footer {
     display: flex;
 }
 
-ul {
-    flex-direction: row;
+footer > ul {
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
+    position: relative;
+    left: -100px;
+    top: 120px;
+    font-size: 20px;
+    font-weight: 700px;
+    color:  #E3E3E3;
+    padding-right: 30px ;
+    line-height: 40px;
+    width: 600px;
+    
+    
+    
+   
+    
+    
+}
+
+footer > h1 {
+    margin-top:10px;
+    padding-top: 20px;
+    position: relative;
+    left: 370px;
+    width:1000px;
+    
+
+    
+}
+
+footer > img {
+    position: relative;
+    right: 130px;
+    bottom: 200px;
+   
+    
 }

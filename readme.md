@@ -13,8 +13,20 @@ A faire:
          .section
          .article
          .footer
+
+ Site à finir : footer à reprendre avant la fin du délais
+                Remettre le p du header en position relative
+                repositionner le logo livre du h1 de la section
+                Mettre les prix dans les sélections de l'article        
 4-faire des commit pour chaque partie du site finis
 
-A voir:
+A voir et à revoir :
 
-1-utilisation flexbox css/grid css (site Pierre Giraud)
+1-utilisation flexbox css/grid css (site Pierre Giraud, https://css-tricks.com/snippets/css/a-guide-to-flexbox/,)
+
+
+
+
+
+
+Difficultés rencontrées : positionnement des éléments dans leurs conteneurs
