@@ -19,7 +19,6 @@ body {
 
 nav {
     height: 179px;
-
 }
 
 nav ul {
@@ -67,14 +66,12 @@ label {
 /*/////////////////////////////////header//////////////////*/
 
 header {
-    height: 500px;
+    height: 300px;
 }
 
-img {
-    margin-left: 113px;
-}
+header img {}
 
-header h1 {
+.titre1 {
     color: #4A3174;
     font-family: roboto condensed, sans serif;
     font-weight: 700;
@@ -83,6 +80,14 @@ header h1 {
     position: absolute;
     left: 300px;
     top: 175px;
+}
+
+.logo {
+    position: absolute;
+    left: 100px;
+    top: 175px;
+    box-shadow: none;
+    background-color: #fafafa;
 }
 
 header p {
@@ -118,4 +123,77 @@ header p {
     font-family: roboto condensed;
     font-size: 17px;
     font-weight: 700;
+}
+
+/*//////////////////////////////////section//////////////////////////////*/
+
+.titre2 {
+    position: absolute;
+    left: 130px;
+    top: 350px;
+    height: 500px;
+    font-family: roboto condensed, sans serif;
+    font-weight: 700;
+    font-size: 34px;
+    color: #4A3174;
+}
+
+section {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 100px;
+}
+
+section img {
+    box-shadow: 0px 4px 20px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+section h4 {
+    box-shadow: 0px 4px 20px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+/*/////////////////article/////////////////*/
+
+article {
+    height: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book {
+    flex-direction: row;
+    box-shadow: 0px 4px 20px;
+    background-color: #ffffff;
+    vertical-align: text-top;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+}
+
+.book:hover {
+    box-shadow: 5px 6px 30px;
+}
+
+.flotte {
+    /*vertical-align: top;*/
+}
+
+/*//////////////////footer///////////*/
+
+footer {
+    background-color: #4A3174;
+    height: 500px;
+    color: white;
+    display: flex;
+}
+
+ul {
+    flex-direction: row;
+    list-style-type: none;
 }
