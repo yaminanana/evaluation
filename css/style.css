@@ -308,11 +308,18 @@ footer a:hover {
 }
 
 @media screen and (max-width: 800px) {
-    /*/////header/////*/
+    /*////nav///*/
+    #bouton {
+        position: relative;
+        left: 120px;
+        top: 80px;
+    }
     label {
         position: relative;
-        left: 400px;
+        left: 220px;
+        top: 120px;
     }
+    /*/////header/////*/
     #recherche {
         position: relative;
         right: 800px;
@@ -353,7 +360,7 @@ footer a:hover {
     }
     .prix {
         position: relative;
-        left: -260px;
+        left: -210px;
         bottom: 50px;
     }
     /*////footer///*/
@@ -362,11 +369,11 @@ footer a:hover {
     }
     #liste1, #liste2 {
         position: relative;
-        right: 300px;
+        left: -180px;
     }
     footer>img {
         position: relative;
-        right: 300px;
+        right: 350px;
     }
     footer>h2 {
         position: relative;
