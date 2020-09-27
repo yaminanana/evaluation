@@ -10,7 +10,7 @@ body {
 
 /*/////////////////nav////////////////////////*/
 
-.rectangle5 {
+#rectangle5 {
     position: relative;
     width: 1500px;
     height: 8px;
@@ -18,35 +18,28 @@ body {
 }
 
 nav {
-   
     height: 179px;
-}
-
-nav ul {
-    list-style-type: none;
 }
 
 nav li {
     float: left;
-    
-    text-align: center;
-    padding: 26px;
-    margin-left: 70px;
+    list-style-type: none;
+    padding: 10px;
 }
 
 nav a {
     position: relative;
-    left: 130px;
+    left: 600px;
+    top: 15px;
     text-decoration: none;
     font-size: 20px;
-    line-height: 23px;
     font-weight: bold;
     color: #4A3174;
 }
 
-button {
+#bouton {
     position: relative;
-    left: 340px;
+    left: 320px;
     top: 15px;
     color: #fafafa;
     background-color: #4A3174;
@@ -60,7 +53,7 @@ button {
 
 label {
     position: relative;
-    left: 270px;
+    left: 250px;
     top: 20px;
     color: #9d9d9d;
     font-weight: bold;
@@ -72,9 +65,7 @@ header {
     height: 300px;
 }
 
-
-
-.titre1 {
+#titre1 {
     color: #4A3174;
     font-family: roboto condensed, sans serif;
     font-weight: 700;
@@ -85,27 +76,28 @@ header {
     top: 175px;
 }
 
-.logo {
+#logo {
     position: relative;
-    right: 1250px;
+    right: 1150px;
     top: 175px;
     box-shadow: none;
     background-color: #fafafa;
 }
 
 header p {
-    position: absolute;
-    left: 300px;
-    top: 250px;
+    position: relative;
+    right: 920px;
+    top: 180px;
     font-size: 16px;
     color: #7a7a7a;
+    white-space: nowrap;
 }
 
-.recherche {
+#recherche {
     padding: 15px;
-    position: absolute;
-    left: 800px;
-    top: 200px;
+    position: relative;
+    right: 500px;
+    top: 100px;
     color: #9d9d9d;
     font-size: 17px;
     font-family: roboto condensed, sans serif;
@@ -116,32 +108,38 @@ header p {
     border: none;
 }
 
-.GO {
-    position: absolute;
-    top: 200px;
-    left: 1160px;
+#GO {
+    position: relative;
+    top: 60px;
+    right: 85px;
     width: 80px;
+    height: 40px;
+    border-radius: 3px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     font-family: roboto condensed;
     font-size: 17px;
     font-weight: 700;
+    background-color: #4A3174;
+    color: #fafafa;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 /*//////////////////////////////////section//////////////////////////////*/
 
-.titre2 {
+#titre2 {
     position: relative;
-    left: 250px;
-    bottom: 150px;
+    left: 200px;
+    bottom: 110px;
     height: 50px;
     width: 900px;
     font-family: roboto condensed, sans serif;
     font-weight: 700;
     font-size: 34px;
+    white-space: nowrap;
     color: #4A3174;
-    
-  
 }
 
 section {
@@ -152,7 +150,7 @@ section {
     padding-left: 100px;
 }
 
-.proposition {
+#proposition1, #proposition2, #proposition3 {
     box-shadow: 0px 4px 20px;
     background-color: #ffffff;
     padding: 20px;
@@ -163,21 +161,15 @@ section {
     right: 200px;
 }
 
- span {
+span {
     color: #7a7a7a;
     font-size: 16px;
-    
-    
 }
 
 h4 {
     color: #222222;
     font-size: 19px;
-    
-   
 }
-
-
 
 /*/////////////////article/////////////////*/
 
@@ -187,19 +179,21 @@ article {
     flex-wrap: wrap;
 }
 
-article > h1 {
+article>h2 {
+    position: relative;
+    left: 60px;
     font-family: roboto condensed;
     font-size: 34px;
     color: #4A3174;
 }
 
-h1 > span {
+h2>span {
     font-size: 34px;
     color: gold;
 }
 
 .book {
-   display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     box-shadow: 0px 4px 20px;
@@ -218,28 +212,41 @@ h1 > span {
     position: relative;
     top: 30px;
     right: 200px;
-    
+    color: #cbcbcb;
+}
+
+.prix {
+    position: relative;
+    left: 800px;
+    bottom: 90px;
+    font-size: 19px;
+    opacity: 0.42;
 }
 
 .book:hover {
     box-shadow: 5px 6px 30px;
     color: #9e9e9e;
-}
-.flotte{
-   padding-left: 10px;
+    transition-duration: 0.3s;
 }
 
-.book > h4 {
+.book :hover.prix {
+    color: #EAAA08;
+    font-size: 27px;
+}
+
+p:hover {
+    color: grey;
+}
+
+.flotte {
+    padding-left: 10px;
+}
+
+.book>h4 {
     padding-left: 10px;
     position: relative;
-    left: 60px;
+    right: -12px;
 }
-
-
-
-
-
-
 
 /*//////////////////footer///////////*/
 
@@ -250,7 +257,13 @@ footer {
     display: flex;
 }
 
-footer > ul {
+ul>li {
+    width: 280px;
+    position: relative;
+    right: 200px;
+}
+
+footer>ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -258,34 +271,105 @@ footer > ul {
     left: -100px;
     top: 120px;
     font-size: 20px;
-    font-weight: 700px;
-    color:  #E3E3E3;
-    padding-right: 30px ;
+    font-weight: 700;
+    color: #E3E3E3;
+    padding-right: 30px;
     line-height: 40px;
     width: 600px;
-    
-    
-    
-   
-    
-    
+    white-space: nowrap;
 }
 
-footer > h1 {
-    margin-top:10px;
+footer>h2 {
+    margin-top: 10px;
     padding-top: 20px;
+    font-size: 35px;
+    font-weight: 700;
     position: relative;
-    left: 370px;
-    width:1000px;
-    
-
-    
+    left: 200px;
+    width: 1000px;
+    white-space: nowrap;
 }
 
-footer > img {
+footer>img {
     position: relative;
-    right: 130px;
+    right: 350px;
     bottom: 200px;
-   
-    
+}
+
+a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+footer a:hover {
+    background-color: #715e90;
+    ;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 800px) {
+    /*/////header/////*/
+    label {
+        position: relative;
+        left: 400px;
+    }
+    #recherche {
+        position: relative;
+        right: 800px;
+        top: 200px;
+    }
+    #GO {
+        position: relative;
+        right: 450px;
+        top: 160px;
+    }
+    #logo {
+        position: relative;
+    }
+    header>p {
+        position: relative;
+        right: 650px;
+    }
+    /*////////////////section////*/
+    #proposition3 {
+        display: none;
+    }
+    #proposition1, .proposition2 {
+        height: 360px;
+        width: 200px;
+    }
+    /*///////////article////*/
+    .book {
+        width: 85%;
+        height: 160px;
+    }
+    .book>p {
+        position: relative;
+        left: -15px;
+        top: 5px;
+    }
+    .book>h4 {
+        white-space: nowrap;
+    }
+    .prix {
+        position: relative;
+        left: -260px;
+        bottom: 50px;
+    }
+    /*////footer///*/
+    #liste3 {
+        display: none;
+    }
+    #liste1, #liste2 {
+        position: relative;
+        right: 300px;
+    }
+    footer>img {
+        position: relative;
+        right: 300px;
+    }
+    footer>h2 {
+        position: relative;
+        right: 400px;
+    }
 }

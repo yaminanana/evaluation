@@ -4,48 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Actutu</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
     <section>
         <nav>
-            <div class="rectangle5"></div>
+            <div id="rectangle5"></div>
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">Rechercher</a></li>
                 <li><a href="#">A propos</a></li>
             </ul>
             <label>Se connecter</label>
-            <button type="button">s'inscrire</button>
+            <button id="bouton" type="button">s'inscrire</button>
         </nav>
         <header>
-            <img class="logo" src="image/logo.svg" alt="logo du site">
 
-            <h1 class="titre1">Actutu</h1>
+            <img id="logo" src="image/logo.svg" alt="logo du site">
+
+            <h1 id="titre1">Actutu</h1>
             <p>Toute l'actualité du livre</p>
-            <input class="recherche" type="search" id="site-search" name="q" placeholder="Rechercher un livre">
-            <button class="GO" type="submit" id="btn-search">GO</button>
+            <input id="recherche" type="search" name="q" placeholder="Rechercher un livre">
+            <button id="GO" type="submit">GO</button>
+            <div id="resultat"></div>
 
 
         </header>
     </section>
     <section>
 
-        <h1 class="titre2">📙 Recommandations</h1>
-        <article class="proposition">
+        <h1 id="titre2">📙 Recommandations</h1>
+        <article id="proposition1">
             <img src="image/livre1.svg" alt="livre">
 
             <h4>Learning ECMAScript 6<br><span>Narayan prusty<br> 27.42€</span></h4>
         </article>
-        </figure>
-        <article class="proposition">
+
+        <article id="proposition2">
             <img src="image/livre2.svg" alt="livre">
             <h4>Learning ECMAScript 6<br><span>Narayan prusty<br> 27.42€</span>
 
             </h4>
         </article>
-        <article class="proposition">
+        <article id="proposition3">
             <img src="image/livre3.svg" alt="livre">
             <h4>Learning ECMAScript 6<br><span>Narayan prusty<br> 27.42€</span></h4>
 
@@ -55,9 +62,10 @@
 
     </section>
     <article>
-        <h1>📘 Les livres à moins de <span>20€</span></h1>
+
+        <h2>📘 Les livres à moins de <span>20€</span></h2>
         <article class="book">
-            
+
             <img class="flotte" src="image/livre.svg" alt="selection">
             <h4>Learning ECMAScript 6<br><span>Narayan Prusty</span></h4>
             <p>Learn all the new ES6 features and be amongst
@@ -66,27 +74,27 @@
                 approach
                 to
                 writing object-oriented JavaScript code using ES6 Create and use ES6 modules to learn to write smart,
-                modularized JavaScript code</p>
-                
+                modularized JavaScript code<span class="prix">27.42€</span></p>
+
         </article>
         <article class="book">
-            
+
             <img class="flotte" src="image/livre.svg" alt="selection">
             <h4>Learning ECMAScript 6<br><span>Narayan Prusty</span></h4>
             <p>Learn all the new ES6 features and be amongst
-            the most
+                the most
                 prominent JavaScript
                 developers
                 who can write efficient JS programs as per the latest standards! About This Book Learn a powerful
                 approach
                 to
                 writing object-oriented JavaScript code using ES6 Create and use ES6 modules to learn to write smart,
-                modularized JavaScript code</p>
+                modularized JavaScript code<span class="prix">27.42€</span></p>
         </article>
         <article class="book">
-            
-            
-            <img class="flotte" src="image/livre.svg">
+
+
+            <img class="flotte" src="image/livre.svg" alt="selection">
             <h4>Learning ECMAScript 6<br><span>Narayan Prusty</span></h4>
             <p>Learn all the new ES6 features and be amongst the most
                 prominent JavaScript
@@ -95,11 +103,11 @@
                 approach
                 to
                 writing object-oriented JavaScript code using ES6 Create and use ES6 modules to learn to write smart,
-                modularized JavaScript code</p>
+                modularized JavaScript code<span class="prix">27.42€</span></p>
         </article>
         <article class="book">
-            
-            <img class="flotte" src="image/livre.svg">
+
+            <img class="flotte" src="image/livre.svg" alt="selection">
             <h4>Learning ECMAScript 6<br><span>Narayan Prusty</span></h4>
             <p>Learn all the new ES6 features and be amongst the most
                 prominent JavaScript
@@ -108,11 +116,11 @@
                 approach
                 to
                 writing object-oriented JavaScript code using ES6 Create and use ES6 modules to learn to write smart,
-                modularized JavaScript code</p>
+                modularized JavaScript code<span class="prix">27.42€</span></p>
         </article>
         <article class="book">
-            
-            <img class="flotte" src="image/livre.svg">
+
+            <img class="flotte" src="image/livre.svg" alt="selection">
             <h4>Learning ECMAScript 6<br><span>Narayan Prusty</span></h4>
             <p>Learn all the new ES6 features and be amongst the most
                 prominent JavaScript
@@ -121,11 +129,11 @@
                 approach
                 to
                 writing object-oriented JavaScript code using ES6 Create and use ES6 modules to learn to write smart,
-                modularized JavaScript code</p>
+                modularized JavaScript code<span class="prix">27.42€</span></p>
         </article>
         <article class="book">
-            
-            <img class="flotte" src="image/livre.svg">
+
+            <img class="flotte" src="image/livre.svg" alt="selection">
             <h4>Learning ECMAScript 6<br><span>Narayan Prusty</span></h4>
             <p>Learn all the new ES6 features and be amongst the most
                 prominent JavaScript
@@ -134,39 +142,47 @@
                 approach
                 to
                 writing object-oriented JavaScript code using ES6 Create and use ES6 modules to learn to write smart,
-                modularized JavaScript code</p>
+                modularized JavaScript code<span class="prix">27.42€</span></p>
         </article>
 
 
     </article>
     <footer>
-        <h1>Toutes les ressources du site</h1>
+        <h2>Toutes les ressources du site</h2>
         <img src="image/logoblanc.svg" alt="logo du site en blanc">
-        <ul>
-            <li> Page d’accueil</li>
-            <li>Livres papier</li>
-            <li>Ebooks / Epubs</li>
-            <li>Livres audio</li>
+        <ul id="liste1">
+            <li><a href="#">Page d’accueil</a></li>
+            <li><a href="#">Livres papier</a></li>
+            <li><a href="#">Ebooks / Epubs</a></li>
+            <li><a href="#">Livres audio</a></li>
         </ul>
 
-        <ul>
-            <li>Policier</li>
-            <li>Science Fiction</li>
-            <li>Frisson</li>
-            <li>Médiéval</li>
-            <li> Toutes les catégories</li>
+        <ul id="liste2">
+            <li><a href="#">Policier</a></li>
+            <li><a href="#">Science Fiction</a></li>
+            <li><a href="#">Frisson</a></li>
+            <li><a href="#">Médiéval</a></li>
+            <li><a href="#">Toutes les catégories</a></li>
         </ul>
 
-        <ul>
-            <li> Promotions</li>
-            <li>Livres à paraitre prochainement</li>
-            <li>Meilleures ventes</li>
-            <li>Incontournables</li>
-            <li> Tous les bons plans</li>
+        <ul id="liste3">
+            <li><a href="#">Promotions</a></li>
+            <li><a href="#">Livres à paraitre prochainement</a></li>
+            <li><a href="#">Meilleures ventes</a></li>
+            <li><a href="#">Incontournables</a></li>
+            <li><a href="#">Tous les bons plans</a></li>
         </ul>
 
     </footer>
 
+
+
+    <script src="javascript/main.js">
+
+
+
+
+    </script>
 </body>
 
 </html>
