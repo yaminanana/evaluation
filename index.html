@@ -41,62 +41,60 @@
         <p>Toute l'actualité du livre</p>
         <form>
           <div id="resultat"></div>
-          <input
-            id="recherche"
-            type="search"
-            name="books"
-            placeholder="Rechercher un livre"
-            value=""
-            onchange="rechercheLivres()"
-          />
-          <button id="GO" type="submit">GO</button>
+          <input id="recherche"type="search"name="books"placeholder="Rechercher un livre"value=""onchange="rechercheLivres()" />
+            <button id="GO" type="submit">GO</button>
         </form>
       </header>
     </section>
     <section>
       <h1 id="titre2">📙 Recommandations</h1>
       <article id="proposition1">
-        <img src="image/livre1.svg" alt="livre" />
+        <img class="image" src="image/livre1.svg" alt="livre" />
 
-        <h4>
-          Learning ECMAScript 6<br /><span
-            >Narayan prusty<br />
-            27.42€</span
-          >
-        </h4>
+        <h4 class="titre">Learning ECMAScript 6</h4>
+        <br />
+        <span class="auteur">Narayan prusty</span>
+        <br />
+        <span class="prix">27.42€</span>
       </article>
 
       <article id="proposition2">
-        <img src="image/livre2.svg" alt="livre" />
-        <h4>
-          Learning ECMAScript 6<br /><span
-            >Narayan prusty<br />
-            18.99€</span
-          >
-        </h4>
+        <img class="image" src="image/livre2.svg" alt="livre" />
+        <h4 class="titre">Learning ECMAScript 6</h4>
+        <br />
+        <span class="auteur">Narayan prusty</span>
+        <br />
+        <span class="prix">18.42€</span>
       </article>
       <article id="proposition3">
         <img src="image/livre3.svg" alt="livre" />
-        <h4>
-          Learning ECMAScript 6<br /><span
-            >Narayan prusty<br />
-            19.99€</span
-          >
-        </h4>
+        <h4 class="titre">Learning ECMAScript 6</h4>
+        <br />
+        <span class="auteur">Narayan prusty</span>
+        <br />
+        <span class="prix">19.99€</span>
       </article>
     </section>
     <article>
       <h2>📘 Les livres à moins de <span>20€</span></h2>
       <article class="book">
-        <img class="flotte" src="image/livre.svg" alt="selection" />
-        <h4>Learning ECMAScript 6<br /><span>Narayan Prusty</span></h4>
-        <p>
+        <img
+          class="flotte"
+          class="image"
+          src="image/livre.svg"
+          alt="selection"
+        />
+        <h4 class="titre">
+          Learning ECMAScript 6<br /><span class="auteur">Narayan Prusty</span>
+        </h4>
+        <p class="resume">
           Learn all the new ES6 features and be amongst the most prominent
           JavaScript developers who can write efficient JS programs as per the
           latest standards! About This Book Learn a powerful approach to writing
           object-oriented JavaScript code using ES6 Create and use ES6 modules
-          to learn to write smart, modularized JavaScript code<span class="prix">27.42€</span>
-          
+          to learn to write smart, modularized JavaScript code<span class="prix"
+            >27.42€</span
+          >
         </p>
       </article>
       <article class="book">
@@ -120,8 +118,8 @@
           latest standards! About This Book Learn a powerful approach to writing
           object-oriented JavaScript code using ES6 Create and use ES6 modules
           to learn to write smart, modularized JavaScript code<span class="prix"
-            >27.42€</span>
-          
+            >27.42€</span
+          >
         </p>
       </article>
       <article class="book">
@@ -192,5 +190,6 @@
     </footer>
 
     <script src="javascript/main.js"></script>
+    <script src="javascript/index.js"></script>
   </body>
 </html>
